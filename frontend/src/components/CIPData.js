@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 function CIPData() {
-    // console.log(dataCIP.features);
     let navigate = useNavigate();
     const tableRows = dataCIP.features.map(feature => {
         const id = feature.properties.OBJECTID

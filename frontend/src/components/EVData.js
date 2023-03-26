@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 function EVData() {
-    // console.log(dataEV.features);
     let navigate = useNavigate();
     const tableRows = dataEV.features.map(feature => {
         const id = feature.properties.OBJECTID

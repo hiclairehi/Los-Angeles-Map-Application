@@ -10,7 +10,6 @@ function LAMap() {
   
   function pointToLayer(feature, latlng) {
     let markerOptions;
-    console.log(latlng)
     for (let i = 0; i < coordinatesOfCIP.length; i++) {
       if (inside([latlng.lng, latlng.lat], coordinatesOfCIP[i])) {
         markerOptions = {
@@ -36,9 +35,6 @@ function LAMap() {
   }
 
   function inside(point, vs) {
-    // ray-casting algorithm based on
-    // https://wrf.ecse.rpi.edu/Research/Short_Notes/pnpoly.html
-    
     var x = point[0], y = point[1];
     
     var inside = false;
